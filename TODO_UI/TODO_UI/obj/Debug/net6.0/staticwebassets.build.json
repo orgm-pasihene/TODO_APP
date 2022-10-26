@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "cSEBrq7Ux3INR6KOEdX8JDruiZF13RQAXIBjTdeWSSw=",
+  "Hash": "mk+7OYezGyZn0m/iKWbz1J0gqM3+eToQzxo9t1ecWQA=",
   "Source": "TODO_UI",
   "BasePath": "_content/TODO_UI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\DO-TO\\TO-DO\\TO-DO\\TO-DO.csproj",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TO-DO\\TO-DO\\TO-DO.csproj",
       "Version": 2,
       "Source": "TO-DO",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -22,7 +22,7 @@
     {
       "Name": "TODO_UI\\wwwroot",
       "Source": "TODO_UI",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "Pattern": "**"
     }
@@ -46,10 +46,10 @@
       "OriginalItemSpec": "C:\\Users\\OBUOBI\\.nuget\\packages\\blazorinputfile\\0.2.0\\staticwebassets\\inputfile.js"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TODO_UI.styles.css",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TODO_UI.styles.css",
       "SourceId": "TODO_UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "TODO_UI.styles.css",
       "AssetKind": "All",
@@ -60,13 +60,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TODO_UI.styles.css"
+      "OriginalItemSpec": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\TODO_UI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TODO_UI.bundle.scp.css",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TODO_UI.bundle.scp.css",
       "SourceId": "TODO_UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "TODO_UI.bundle.scp.css",
       "AssetKind": "All",
@@ -77,13 +77,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TODO_UI.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TODO_UI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -97,10 +97,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -114,10 +114,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -148,10 +148,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -165,10 +165,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -182,10 +182,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -199,10 +199,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -216,10 +216,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -233,10 +233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -250,10 +250,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -267,10 +267,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\css\\site.css",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -284,10 +284,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\favicon.ico",
       "SourceId": "TODO_UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO-UI\\TODO_UI\\TODO_UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TODO_UI\\TODO_UI\\wwwroot\\",
       "BasePath": "_content/TODO_UI",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
