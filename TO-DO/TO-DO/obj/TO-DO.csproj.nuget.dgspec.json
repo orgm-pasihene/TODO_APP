@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\OBUOBI\\source\\repos\\DO-TO\\TO-DO\\TO-DO\\TO-DO.csproj": {}
+    "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TO-DO\\TO-DO\\TO-DO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\OBUOBI\\source\\repos\\DO-TO\\TO-DO\\TO-DO\\TO-DO.csproj": {
+    "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TO-DO\\TO-DO\\TO-DO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\OBUOBI\\source\\repos\\DO-TO\\TO-DO\\TO-DO\\TO-DO.csproj",
+        "projectUniqueName": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TO-DO\\TO-DO\\TO-DO.csproj",
         "projectName": "TO-DO",
-        "projectPath": "C:\\Users\\OBUOBI\\source\\repos\\DO-TO\\TO-DO\\TO-DO\\TO-DO.csproj",
+        "projectPath": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TO-DO\\TO-DO\\TO-DO.csproj",
         "packagesPath": "C:\\Users\\OBUOBI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\OBUOBI\\source\\repos\\DO-TO\\TO-DO\\TO-DO\\obj\\",
+        "outputPath": "C:\\Users\\OBUOBI\\source\\repos\\TODO_APP\\TO-DO\\TO-DO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\OBUOBI\\AppData\\Roaming\\NuGet\\NuGet.Config",

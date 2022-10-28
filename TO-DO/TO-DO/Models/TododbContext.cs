@@ -16,8 +16,8 @@ namespace TO_DO.Models
         {
         }
 
-        public virtual DbSet<Tasks> Tasks { get; set; } = null!;
-        public virtual DbSet<User> Users { get; set; } = null!;
+        public virtual DbSet<Tasks> Tasks { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

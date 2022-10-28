@@ -2,13 +2,15 @@
 
 @using Newtonsoft.Json.Serialization
 @using System.Text.Json
-@*@using System.Text.Json.Serialization*@
 @inject IHttpClientFactory ClientFactory
 @inject Microsoft.Extensions.Configuration.IConfiguration config
 @inject IJSRuntime JS
+@inherits Services
 @using BlazorInputFile
 @using System.IO
 @using System.Text
+@using TODO_UI.Data
+@using TODO_UI.Services
 
 
 <button type="button"
@@ -23,8 +25,45 @@
 
     <thead> 
         <tr>
-            <th>TaskID</th>
-            <th>TaskTitle</th>
+            <th>
+                <div class="d-flex flex-row">
+
+                    <input class="form-control m-2" @bind="TaskIDFilter" />
+                    <button class="m-1" @onclick="FilterFn">Filter</button>
+
+                    <button class="btn btn-light" @onclick='()=>SortFn("TaskID","asc")'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-light" @onclick='()=>SortFn("TaskID","desc")'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z" />
+                        </svg>
+                    </button>
+                </div>
+                TaskID</th>
+
+            <th>
+                <div class="d-flex flex-row">
+
+                    <input class="form-control m-2" @bind="TaskTitleFilter" />
+                    <button class="m-1" @onclick="FilterFn">Filter</button>
+
+                    <button class="btn btn-light" @onclick='()=>SortFn("TaskTitle","asc")'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn btn-light" @onclick='()=>SortFn("TaskTitle","desc")'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-square-fill" viewBox="0 0 16 16">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z" />
+                        </svg>
+                    </button>
+
+                </div>
+                TaskTitle</th>
+
             <th>TaskDetails</th>
             <th>DateAdded</th>
         </tr>     
@@ -125,22 +164,14 @@
         public string TaskDetails { get; set; }
         public string DateAdded { get; set; }
 
-        //public System.Text.Json.JsonNamingPolicy? PropertyNamingPolicy { get; set; }
     }
-
-    private IEnumerable<TasksClass> tasks = Array.Empty<TasksClass>();
-
-    private string modalTitle;
-    private int TaskID;
-    private string TaskTitle;
-    private string TaskDetails;
-    private DateTime DateAdded;
 
     protected override async Task OnInitializedAsync()
     {
         await refreshList();
     }
 
+    //Refersh List
     private async Task refreshList()
     {
         var request  = new HttpRequestMessage(HttpMethod.Get,
@@ -152,7 +183,7 @@
 
         using var responseStream = await response.Content.ReadAsStreamAsync();
 
-        tasks = await JsonSerializer.DeserializeAsync<IEnumerable<TasksClass>>(responseStream);
+        tasksWithoutFilter = tasks = await JsonSerializer.DeserializeAsync<IEnumerable<TasksClass>>(responseStream);
     }
 
     // Create click
@@ -188,7 +219,7 @@
         }
         
 
-        }
+    }
     
 
     // Edit click
@@ -210,9 +241,6 @@
         var client = ClientFactory.CreateClient();
 
         var response = await client.SendAsync(request);
-
-        //using var responseStream = await response.Content.ReadAsStreamAsync();
-        //List<TasksClass> res = await JsonSerializer.DeserializeAsync<List<TasksClass>>(responseStream);
 
         string res = await response.Content.ReadAsStringAsync();
 
@@ -241,24 +269,6 @@
         await JS.InvokeVoidAsync("alert", res);
 
         await refreshList();
-    }
-
-    private void addClick()
-    {
-        modalTitle = "Add Task";
-        TaskID = 0;
-        TaskTitle = "";
-        TaskDetails = "";
-        DateAdded = DateTime.Now;
-    }
-
-    private void editClick(TasksClass tsk)
-    {
-        modalTitle = "Edit Task";
-        TaskID = tsk.TaskID;
-        TaskTitle = tsk.TaskTitle;
-        TaskDetails = tsk.TaskDetails;
-        DateAdded = Convert.ToDateTime(tsk.DateAdded);
     }
 
 }
