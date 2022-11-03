@@ -6,7 +6,7 @@
 @inject Microsoft.Extensions.Configuration.IConfiguration config
 @inject IJSRuntime JS
 
-@*<button type="button"
+*@*@<button type="button"
         class="btn btn-primary m-2 float-end"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
@@ -43,8 +43,8 @@
                     </button>
 
                     <button type="button" class="btn btn-light" mr-1>
-                       @* @onclick="(()=> deleteClick(dep.DepartmentId))">*@
-                @*        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                        @onclick="(()=> deleteClick(dep.DepartmentId))">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
                             <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z" />
                         </svg>
                     </button>
@@ -54,8 +54,8 @@
 
     </tbody>
 </table>
-*@*
-@*<div class="modal fade" id="exampleModal" tabindex="-1"
+
+<div class="modal fade" id="exampleModal" tabindex="-1"
      aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal-dialog modal-lg modal-dialog-centered">
 <div class="modal-content">
@@ -94,9 +94,10 @@
 
 </div>
 </div>
-</div>*@
+</div>
 
 @code{
+
     //public class UserClass
     //{
     //    public int UserID { get; set; }
@@ -112,26 +113,26 @@
     //public string Password;
 
 
-    //protected override async Task OnInitializedAsync()
-    //{
-    //    await refreshList();
-    //}
+    protected override async Task OnInitializedAsync()
+    {
+        await refreshList();
+    }
 
     //public static System.Net.Http.HttpClient CreateClient (this System.Net.Http.IHttpClientFactory factory);
 
-    //private async Task refreshList()
-    //{
-    //    var request = new HttpRequestMessage(HttpMethod.Get,
-    //        config["API_URL"] + "Users");
+    private async Task refreshList()
+    {
+        var request = new HttpRequestMessage(HttpMethod.Get,
+            config["API_URL"] + "Users");
 
-    //    var client = ClientFactory.CreateClient();
+        var client = ClientFactory.CreateClient();
 
-    //    var response = await client.SendAsync(request);
+        var response = await client.SendAsync(request);
 
-    //    using var responseStream = await response.Content.ReadAsStreamAsync();
+        using var responseStream = await response.Content.ReadAsStreamAsync();
 
-    //    users = await JsonSerializer.DeserializeAsync<IEnumerable<UserClass>>(responseStream);
-    //}
+        users = await JsonSerializer.DeserializeAsync<IEnumerable<UserClass>>(responseStream);
+    }
 
     //private void addClick()
     //{
@@ -140,4 +141,4 @@
     //    Username = "";
     //    Password = "";
     //}
-}                         
+}                        *@

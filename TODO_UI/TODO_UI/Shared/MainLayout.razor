@@ -12,6 +12,8 @@
             <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
         </div>
 
+       
+
         <article class="content px-4">
             @Body
         </article>
@@ -30,22 +32,31 @@
                     </NavLink>
                 </button>
             </li>
-            <li class="nav-item">
-                <button class="m-1 btn btn-light btn-outline-primary" Button>
-                    <NavLink href="user">
-                        Users
-                    </NavLink>
-                </button>
-            </li>
-            <li class="nav-item">
-                <button class="m-1 btn btn-light btn-outline-primary" Button>
-                    <NavLink href="tasks">
-                        Task
-                    </NavLink>
-                </button>
-            </li>
 
-        </ul>
+                <li class="nav-item">
+                    <button class="m-1 btn btn-light btn-outline-primary" Button>
+                        <NavLink href="user">
+                            Users
+                        </NavLink>
+                    </button>
+                </li>
+
+
+                <li class="nav-item">
+                    <button class="m-1 btn btn-light btn-outline-primary" Button>
+                        <NavLink href="tasks">
+                            Task
+                        </NavLink>
+                    </button>
+                </li>
+        </ul>       
     </nav>
-    @Body
+
+    <article class="content px-4">
+            @Body
+    </article>
 </div>
+
+@code{
+
+}

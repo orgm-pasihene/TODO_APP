@@ -9,6 +9,8 @@
       "TODO_UI/1.0.0": {
         "dependencies": {
           "BlazorInputFile": "0.2.0",
+          "Blazored.SessionStorage": "2.2.0",
+          "Microsoft.AspNetCore.Components.Authorization": "6.0.10",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
           "Microsoft.Extensions.Configuration": "6.0.1",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
@@ -18,10 +20,21 @@
           "TODO_UI.dll": {}
         }
       },
+      "Blazored.SessionStorage/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.5"
+        },
+        "runtime": {
+          "lib/net5.0/Blazored.SessionStorage.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "BlazorInputFile/0.2.0": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "3.1.0-preview3.19555.2",
-          "Microsoft.AspNetCore.Components.Web": "3.1.0-preview3.19555.2"
+          "Microsoft.AspNetCore.Components": "6.0.10",
+          "Microsoft.AspNetCore.Components.Web": "5.0.5"
         },
         "runtime": {
           "lib/netstandard2.1/BlazorInputFile.dll": {
@@ -70,7 +83,7 @@
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
         }
       },
@@ -85,32 +98,56 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Authorization/3.1.0-preview3.19555.2": {
+      "Microsoft.AspNetCore.Authorization/6.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Metadata": "3.1.0-preview3.19555.2",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.AspNetCore.Metadata": "6.0.10",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authorization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1022.47617"
+          }
         }
       },
-      "Microsoft.AspNetCore.Components/3.1.0-preview3.19555.2": {
+      "Microsoft.AspNetCore.Components/6.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Authorization": "3.1.0-preview3.19555.2",
-          "Microsoft.AspNetCore.Components.Analyzers": "3.1.0-preview3.19555.2",
-          "Microsoft.JSInterop": "3.1.0-preview3.19553.2"
+          "Microsoft.AspNetCore.Authorization": "6.0.10",
+          "Microsoft.AspNetCore.Components.Analyzers": "6.0.10"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1022.47617"
+          }
         }
       },
-      "Microsoft.AspNetCore.Components.Analyzers/3.1.0-preview3.19555.2": {},
-      "Microsoft.AspNetCore.Components.Forms/3.1.0-preview3.19555.2": {
+      "Microsoft.AspNetCore.Components.Analyzers/6.0.10": {},
+      "Microsoft.AspNetCore.Components.Authorization/6.0.10": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "3.1.0-preview3.19555.2"
+          "Microsoft.AspNetCore.Authorization": "6.0.10",
+          "Microsoft.AspNetCore.Components": "6.0.10"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Components.Authorization.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1022.47617"
+          }
         }
       },
-      "Microsoft.AspNetCore.Components.Web/3.1.0-preview3.19555.2": {
+      "Microsoft.AspNetCore.Components.Forms/5.0.5": {
         "dependencies": {
-          "Microsoft.AspNetCore.Components": "3.1.0-preview3.19555.2",
-          "Microsoft.AspNetCore.Components.Forms": "3.1.0-preview3.19555.2",
+          "Microsoft.AspNetCore.Components": "6.0.10"
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/5.0.5": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "6.0.10",
+          "Microsoft.AspNetCore.Components.Forms": "5.0.5",
           "Microsoft.Extensions.DependencyInjection": "6.0.1",
-          "Microsoft.JSInterop": "3.1.0-preview3.19553.2"
+          "Microsoft.JSInterop": "5.0.5",
+          "System.IO.Pipelines": "5.0.1"
         }
       },
       "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
@@ -136,7 +173,14 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Metadata/3.1.0-preview3.19555.2": {},
+      "Microsoft.AspNetCore.Metadata/6.0.10": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Metadata.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.1022.47617"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.10": {
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "6.0.10",
@@ -1068,7 +1112,7 @@
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0",
           "Microsoft.Extensions.Primitives": "6.0.0"
         },
@@ -1128,12 +1172,19 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.1",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
           "Microsoft.Extensions.Options": "6.0.0",
           "System.Diagnostics.DiagnosticSource": "6.0.0"
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.922.41905"
+          }
+        }
+      },
       "Microsoft.Extensions.Options/6.0.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
@@ -1209,7 +1260,7 @@
           }
         }
       },
-      "Microsoft.JSInterop/3.1.0-preview3.19553.2": {},
+      "Microsoft.JSInterop/5.0.5": {},
       "Microsoft.NET.StringTools/1.0.0": {
         "dependencies": {
           "System.Memory": "4.5.4",
@@ -2549,6 +2600,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Blazored.SessionStorage/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2iVrDbv30kuufV0CGjNkQgVReH/aSfDlyqnYTXyoFIFwtrSnMS+pqx5tLFAoigLXn/imSQHPZkVnOArLZYefXg==",
+      "path": "blazored.sessionstorage/2.2.0",
+      "hashPath": "blazored.sessionstorage.2.2.0.nupkg.sha512"
+    },
     "BlazorInputFile/0.2.0": {
       "type": "package",
       "serviceable": true,
@@ -2598,40 +2656,47 @@
       "path": "microsoft.aspnetcore.authentication.jwtbearer/6.0.10",
       "hashPath": "microsoft.aspnetcore.authentication.jwtbearer.6.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Authorization/3.1.0-preview3.19555.2": {
+    "Microsoft.AspNetCore.Authorization/6.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-JrmvhOpcE6hxmxmcKKzjAg3YyiZVi5eKlflIz5j5BLD5oZHtFfejdY0jDgpMbqhGy+r0bqeNm+b4VZY1oej/og==",
-      "path": "microsoft.aspnetcore.authorization/3.1.0-preview3.19555.2",
-      "hashPath": "microsoft.aspnetcore.authorization.3.1.0-preview3.19555.2.nupkg.sha512"
+      "sha512": "sha512-WzMlSLdNdBttOGU/aPBjq6tre/N1fPySHkbv8hsEkE40NIU8vuuIRwUJRe9QCTKlwM9apUbSzhjMBdOhp+15vQ==",
+      "path": "microsoft.aspnetcore.authorization/6.0.10",
+      "hashPath": "microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components/3.1.0-preview3.19555.2": {
+    "Microsoft.AspNetCore.Components/6.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-fB0PTO5Tt6ln6t7wWdUQx7cyF2MY3BllRKdY59k0618fj+vimfOGEyCcq94ulgVY4X6RH3woveiceT91RmPW7A==",
-      "path": "microsoft.aspnetcore.components/3.1.0-preview3.19555.2",
-      "hashPath": "microsoft.aspnetcore.components.3.1.0-preview3.19555.2.nupkg.sha512"
+      "sha512": "sha512-/HXMFugfVysPPoBEiLKUrJglnQeGFibKkb9IKF6asJGkO4LCv5eTObElG0oRTNp8pDfbf7dLOXK9HNq2hvY1gw==",
+      "path": "microsoft.aspnetcore.components/6.0.10",
+      "hashPath": "microsoft.aspnetcore.components.6.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Analyzers/3.1.0-preview3.19555.2": {
+    "Microsoft.AspNetCore.Components.Analyzers/6.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hIcOTPxlwJM14IDW6wXJhOZ9kRB+e15VJbyKAontr5Z+/D2gf2d6JX5CJhAZxUslOn4EOkf2sdbEa+La+PsY9w==",
-      "path": "microsoft.aspnetcore.components.analyzers/3.1.0-preview3.19555.2",
-      "hashPath": "microsoft.aspnetcore.components.analyzers.3.1.0-preview3.19555.2.nupkg.sha512"
+      "sha512": "sha512-krpTqAgPWTPTHYVW3EK8iJpKoJlauDt7oYeSasVGYCb7PMEPd7KfpTJR0efJZN4m4oVHViHXEcFZuWD7dIiAKA==",
+      "path": "microsoft.aspnetcore.components.analyzers/6.0.10",
+      "hashPath": "microsoft.aspnetcore.components.analyzers.6.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Forms/3.1.0-preview3.19555.2": {
+    "Microsoft.AspNetCore.Components.Authorization/6.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-on1TGRqpoKRO41f2GFF2jp/gFWNk3p/cjVIp6g7m5lJ6NPxrT9G40dVd6Q7yUKgjJl6MfLxYcK2sAOVknQcf8w==",
-      "path": "microsoft.aspnetcore.components.forms/3.1.0-preview3.19555.2",
-      "hashPath": "microsoft.aspnetcore.components.forms.3.1.0-preview3.19555.2.nupkg.sha512"
+      "sha512": "sha512-pd9jT42tZAbLC5zW16jdGRLSmo9VPQG9drpFgDeEeuTC5IuQhTXLLXlhj3OSE3vzRD/+DnKUMxbjlXEuQMojaw==",
+      "path": "microsoft.aspnetcore.components.authorization/6.0.10",
+      "hashPath": "microsoft.aspnetcore.components.authorization.6.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Components.Web/3.1.0-preview3.19555.2": {
+    "Microsoft.AspNetCore.Components.Forms/5.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-uC2CyckKfSSUOEW5q+zeuFV7TJfSevRd/w/yQyaWry5QokG3kIwidq+BKWF6b6eRL+Qr5J18JTx2os1M91sQlQ==",
-      "path": "microsoft.aspnetcore.components.web/3.1.0-preview3.19555.2",
-      "hashPath": "microsoft.aspnetcore.components.web.3.1.0-preview3.19555.2.nupkg.sha512"
+      "sha512": "sha512-Kq5Zb30TkHMpTi7Ri6jgrNikFkAv7zFPW50m3iCXdY28eB7+z4VuSnuI+8y/c2LDAPsen3HXwqDMURfgDEYe8A==",
+      "path": "microsoft.aspnetcore.components.forms/5.0.5",
+      "hashPath": "microsoft.aspnetcore.components.forms.5.0.5.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Components.Web/5.0.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-F5Xh3UQcA9sHYoX6Cui7cxc8taIFqf85C/aL419ZscYe/e4m11Hx0RZc38bis7cedAOGtE9zE2SUGR6K19gy8A==",
+      "path": "microsoft.aspnetcore.components.web/5.0.5",
+      "hashPath": "microsoft.aspnetcore.components.web.5.0.5.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Http.Abstractions/2.2.0": {
       "type": "package",
@@ -2654,12 +2719,12 @@
       "path": "microsoft.aspnetcore.jsonpatch/6.0.10",
       "hashPath": "microsoft.aspnetcore.jsonpatch.6.0.10.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Metadata/3.1.0-preview3.19555.2": {
+    "Microsoft.AspNetCore.Metadata/6.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-98GqI+bYJpDxzfbu4Rx2JAp2vUnoXRngSVrBvm2+U6g/GnU9xU8C0EMGyUw4WoN5AynVZJscOlwWirZs+zE+sw==",
-      "path": "microsoft.aspnetcore.metadata/3.1.0-preview3.19555.2",
-      "hashPath": "microsoft.aspnetcore.metadata.3.1.0-preview3.19555.2.nupkg.sha512"
+      "sha512": "sha512-s+tychZiXgodo92edHj1+hyg3MCu/32FriN4UcOsoaSLKlxNfaqyiaPBqqlZH2ArWOz3c8AyuMZR3qy0bOcycQ==",
+      "path": "microsoft.aspnetcore.metadata/6.0.10",
+      "hashPath": "microsoft.aspnetcore.metadata.6.0.10.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Mvc.NewtonsoftJson/6.0.10": {
       "type": "package",
@@ -2955,12 +3020,12 @@
       "path": "microsoft.extensions.logging/6.0.0",
       "hashPath": "microsoft.extensions.logging.6.0.0.nupkg.sha512"
     },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.0": {
+    "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/HggWBbTwy8TgebGSX5DBZ24ndhzi93sHUBDvP1IxbZD7FDokYzdAr6+vbWGjw2XAfR2EJ1sfKUotpjHnFWPxA==",
-      "path": "microsoft.extensions.logging.abstractions/6.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+      "sha512": "sha512-pwXCZKaA7m5wgmCj49dW+H1RPSY7U62SKLTQYCcavf/k3Nyt/WnBgAjG4jMGnwy9rElfAZ2KvxvM5CJzJWG0hg==",
+      "path": "microsoft.extensions.logging.abstractions/6.0.2",
+      "hashPath": "microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/6.0.0": {
       "type": "package",
@@ -3018,12 +3083,12 @@
       "path": "microsoft.identitymodel.tokens/6.10.0",
       "hashPath": "microsoft.identitymodel.tokens.6.10.0.nupkg.sha512"
     },
-    "Microsoft.JSInterop/3.1.0-preview3.19553.2": {
+    "Microsoft.JSInterop/5.0.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-zKD7Rkln28oHN9fij0oY1P8Iz5vgWXkl/wkHBgBkBFKeevWb2Kz9fZ1pdJxXFF+kf5UsrFpqtO8CT+WA1W8Y+A==",
-      "path": "microsoft.jsinterop/3.1.0-preview3.19553.2",
-      "hashPath": "microsoft.jsinterop.3.1.0-preview3.19553.2.nupkg.sha512"
+      "sha512": "sha512-Ik1tdMAIb7i9vlv5pvF+aMVnoOXWUfRFMpiyHSMg+0spbcBqqq1vBVMuyqjh7PZlqWPyFqYrfToEonGh2ztT0w==",
+      "path": "microsoft.jsinterop/5.0.5",
+      "hashPath": "microsoft.jsinterop.5.0.5.nupkg.sha512"
     },
     "Microsoft.NET.StringTools/1.0.0": {
       "type": "package",
