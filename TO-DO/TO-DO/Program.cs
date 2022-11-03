@@ -76,13 +76,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-//Add authentication
+//Add auth
 app.UseAuthentication();
+app.UseAuthorization();
 
 //Add Cors
 app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-
-app.UseAuthorization();
 
 app.MapControllers();
 
