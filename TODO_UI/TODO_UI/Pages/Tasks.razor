@@ -1,4 +1,7 @@
 ﻿@page "/tasks"
+@attribute [Authorize(Roles ="User")]
+
+@using TODO_UI.Authentication
 
 @using Newtonsoft.Json.Serialization
 @using System.Text.Json

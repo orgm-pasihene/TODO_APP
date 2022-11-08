@@ -13,12 +13,21 @@ using System.Threading.Tasks;
 using static TODO_UI.Pages.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ToDo_Project.Controllers;
+using Blazored.SessionStorage;
+using Microsoft.AspNetCore.Components.Authorization;
+using TODO_UI.Authentication;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddAuthenticationCore();
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddScoped<ProtectedSessionStorage>();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthenticationStateProvider>();
+builder.Services.AddSingleton<UserAccountService>();
+
 
 
 //JSON Serializer
@@ -43,7 +52,6 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Error");
 }
 
-
 app.UseStaticFiles();
 
 app.UseRouting();
@@ -52,5 +60,3 @@ app.MapBlazorHub();
 app.MapFallbackToPage("/_Host");
 
 app.Run();
-
-await builder.Build().RunAsync();
